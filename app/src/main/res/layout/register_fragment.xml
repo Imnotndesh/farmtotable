@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".register_fragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/userName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/input_back"
+            android:drawableStart="@drawable/username_icon"
+            android:ems="10"
+            android:hint="Username"
+            android:inputType="text"
+            android:padding="4dp" />
+
+        <EditText
+            android:id="@+id/usrEmail"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/input_back"
+            android:drawableStart="@drawable/email_icon"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="text"
+            android:padding="4dp" />
+
+        <EditText
+            android:id="@+id/usrPassword"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:background="@drawable/input_back"
+            android:drawableStart="@drawable/pass_icon"
+            android:ems="10"
+            android:hint="Password"
+            android:inputType="text"
+            android:padding="4dp" />
+    </LinearLayout>
+</FrameLayout>
