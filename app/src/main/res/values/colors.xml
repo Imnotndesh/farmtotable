@@ -2,4 +2,7 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="app_green">#042402</color>
+    <color name="light_app_green">#4CAF50</color>
+    <color name="noti_red">#A31309</color>
 </resources>

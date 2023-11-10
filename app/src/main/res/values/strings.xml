@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">Farmtotable</string>
+    <string name="welcom_text_main">Welcome</string>
+    <string name="sample_User">Mark</string>
+    <string name="sample_noti_count">1</string>
+    <string name="search_bar_hint">Search for any product</string>
+    <string name="current_discount_text">Save 10% on corn!</string>
 </resources>
