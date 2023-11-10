@@ -6,3 +6,6 @@ A project aiming to bring about a change to the agricultural scene by promising 
 
 ## Sample screenshots
 ![Screenshot_20231110-162524](https://github.com/Imnotndesh/farmtotable/assets/103320083/6f303719-fa62-4e18-9df3-a5aa0ed10872)
+
+## Project state
+The project is still in its alpha stagebut can be easily built from source by cloning the repo below and builing the apk using Android studio
