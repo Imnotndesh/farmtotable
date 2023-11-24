@@ -10,4 +10,5 @@
     <string name="orderAmount">KSh 1800</string>
     <string name="cartQuantity">Amt: 1</string>
     <string name="creator_tag">Made with ❤️‍🔥 by Ndegwaa.</string>
+    <string name="register_text">New to the app? Register here</string>
 </resources>

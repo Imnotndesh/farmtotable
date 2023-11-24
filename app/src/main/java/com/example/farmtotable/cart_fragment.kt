@@ -1,5 +1,6 @@
 package com.example.farmtotable
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
@@ -9,6 +10,7 @@ import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
+import androidx.fragment.app.FragmentTransaction
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -36,8 +38,15 @@ class cart_fragment : Fragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View?
+    {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.cart_fragment, container, false)
+        val v = inflater.inflate(R.layout.cart_fragment, container, false)
+        val thisButton = v.findViewById<ImageView>(R.id.cartExitTop)
+        thisButton.setOnClickListener{
+            val intent = Intent(activity,MainActivity::class.java)
+            startActivity(intent)
+        }
+        return v;
     }
 }
