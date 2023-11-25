@@ -39,7 +39,7 @@
             android:drawableStart="@drawable/email_icon"
             android:drawablePadding="4dp"
             android:ems="10"
-            android:hint="Password"
+            android:hint="Email"
             android:inputType="text"
             android:padding="4dp"
             android:textColor="@color/black"
