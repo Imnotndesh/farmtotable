@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.ImageView
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.FragmentManager
 
 class MainActivity : AppCompatActivity() {
@@ -36,5 +37,11 @@ class MainActivity : AppCompatActivity() {
             setFragment.addToBackStack(null)
             setFragment.commit()
         }
+    }
+//preventing going back to signup activity
+
+    override fun onBackPressed() {
+        // TODO "Create logic to prevent app from moving back to signin screen"
+        Toast.makeText(this, "Goodbye", Toast.LENGTH_SHORT).show()
     }
 }

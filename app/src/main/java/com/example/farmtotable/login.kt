@@ -22,4 +22,5 @@ class login : AppCompatActivity() {
             registerText.setText("Already a member? Click here to login")
         }
     }
+
 }

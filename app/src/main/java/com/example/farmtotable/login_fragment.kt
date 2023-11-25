@@ -62,6 +62,7 @@ class login_fragment : Fragment() {
                     Toast.makeText(context, "Welcome $usrNameContent", Toast.LENGTH_SHORT).show()
                     val moveToHomepage = Intent(activity,MainActivity::class.java)
                     startActivity(moveToHomepage)
+
                 }
                 else{
                     Toast.makeText(context, "Incorrect password or username!...Try again", Toast.LENGTH_SHORT).show()
