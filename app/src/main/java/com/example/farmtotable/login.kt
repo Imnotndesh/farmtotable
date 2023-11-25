@@ -19,6 +19,7 @@ class login : AppCompatActivity() {
             setFragment.replace(R.id.loginFragmentContainer, register_fragment())
             setFragment.addToBackStack(null)
             setFragment.commit()
+            registerText.setText("Already a member? Click here to login")
         }
     }
 }

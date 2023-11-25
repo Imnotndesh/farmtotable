@@ -49,7 +49,6 @@ class register_fragment : Fragment() {
         val uEmail = v.findViewById<TextView>(R.id.usrEmail)
         val uPass = v.findViewById<TextView>(R.id.usrPassword)
         val signUpButton = v.findViewById<Button>(R.id.registerBttn)
-
         db = sqlHelper(activity)
         signUpButton.setOnClickListener{
             val usrNameContent = uName.text.toString()
@@ -61,10 +60,13 @@ class register_fragment : Fragment() {
                 Toast.makeText(context, "Error creating user, check sign-up details", Toast.LENGTH_SHORT).show()
             }
             else{
-                if (saveToDB==true){
-                    Toast.makeText(context, "Signup Success", Toast.LENGTH_SHORT).show()
+                if (saveToDB){
+                    Toast.makeText(context, "User $usrNameContent created successfully", Toast.LENGTH_SHORT).show()
                     val moveToHome = Intent(activity,MainActivity::class.java)
                     startActivity(moveToHome)
+                }
+                else{
+                    Toast.makeText(context, "User $usrNameContent exists, Login instead.", Toast.LENGTH_SHORT).show()
                 }
             }
         }
