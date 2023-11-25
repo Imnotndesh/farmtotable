@@ -46,7 +46,7 @@ class register_fragment : Fragment() {
         // Inflate the layout for this fragment
         val v = inflater.inflate(R.layout.register_fragment, container, false)
         val uName = v.findViewById<EditText>(R.id.userName)
-        val uEmail = v.findViewById<TextView>(R.id.usrEmail)
+        val uEmail = v.findViewById<TextView>(R.id.usrName)
         val uPass = v.findViewById<TextView>(R.id.usrPassword)
         val signUpButton = v.findViewById<Button>(R.id.registerBttn)
         db = sqlHelper(activity)
