@@ -41,7 +41,6 @@ class Homepage_fragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         val  v = inflater.inflate(R.layout.homepage_fragment, container, false)
-        val topText = v.findViewById<TextView>(R.id.user_name_top)
         return v
     }
 

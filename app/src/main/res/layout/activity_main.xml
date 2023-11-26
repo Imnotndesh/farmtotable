@@ -28,7 +28,12 @@
             android:id="@+id/mainBar"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_gravity="bottom">
+            android:layout_gravity="bottom"
+            android:background="#2EFFFFFF"
+            android:hapticFeedbackEnabled="true"
+            app:backgroundTint="@color/app_green"
+            app:hideOnScroll="true"
+            app:navigationIconTint="@color/light_app_green">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -57,7 +62,8 @@
                         android:layout_gravity="center"
                         android:text="Products"
                         android:textAlignment="center"
-                        android:textColor="@color/app_green"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -83,7 +89,8 @@
                         android:layout_gravity="center"
                         android:text="Cart"
                         android:textAlignment="center"
-                        android:textColor="@color/app_green"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </LinearLayout>
 
@@ -109,7 +116,8 @@
                         android:layout_gravity="center"
                         android:text="Account"
                         android:textAlignment="center"
-                        android:textColor="@color/black"
+                        android:textColor="@color/white"
+                        android:textSize="20sp"
                         android:textStyle="bold" />
                 </LinearLayout>
             </LinearLayout>
